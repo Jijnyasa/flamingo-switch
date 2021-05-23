@@ -1,0 +1,57 @@
+{
+  "components" : {
+    "api_server" : {
+      "logs_path" : "",
+      "odo_app_name" : "flam-liveness-checker-preprod-ad2",
+      "config_path" : "",
+      "jar_path" : "",
+      "grep_string": "liveness-checker"
+    },
+    "provisioner" : {
+      "logs_path" : "",
+      "odo_app_name" : "flam-provisioner-agent-preprod.ad2",
+      "config_path" : "",
+      "jar_path" : "./target/",
+      "grep_string": "provisioner-agent-",
+      "jar_name": "provisioner-agent-*.jar"
+    },
+    "state_service" : {
+      "logs_path" : "",
+      "odo_app_name" : "",
+      "config_path" : "",
+      "jar_path" : "",
+      "grep_string": "liveness-checker"
+    },
+    "liveness_checker" : {
+      "logs_path" : "",
+      "odo_app_name" : "flam-liveness-checker-preprod-ad2",
+      "config_path" : "./config/",
+      "jar_path" : "./",
+      "grep_string" : "liveness-checker",
+      "jar_name": "liveness-checker-*.jar"
+    },
+    "hostagent" : {
+      "logs_path" : "",
+      "odo_app_name" : "",
+      "config_path" : "",
+      "jar_path" : "",
+      "grep_string": "liveness-checker"
+    },
+    "logagent" : {
+      "logs_path" : "",
+      "odo_app_name" : "flam-log-agent-preprod",
+      "config_path" : "",
+      "jar_path" : "./",
+      "grep_string": "com.oracle.pic.flamingo.logging",
+      "jar_name": "dataplane-logagent-*.jar"
+    }
+  },
+
+  "constants" : {
+    "tmp_dir": "flamingo_switch",
+    "remote_jar_tmp_name": ".original",
+    "remote_config_tmp_name": ".original",
+    "retry_count": 3
+  }
+}
+

@@ -1,0 +1,1 @@
+config_path = '~/.oci/flam_switch_config.json'
